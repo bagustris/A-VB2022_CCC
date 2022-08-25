@@ -23,7 +23,7 @@ model = Wav2Vec2Model.from_pretrained("facebook/wav2vec2-large-robust")
 arrays = []
 fs = 16000
 
-for file in files[:4]:
+for file in files:
     print(f"Processing {file}")
 
     array, fs = torchaudio.load(os.path.join(wav_path, file))
