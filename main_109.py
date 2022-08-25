@@ -70,6 +70,12 @@ feat_dict = {
     "eGeMAPS": [";", "infer", 2, 88],
     "w2v2-R-emo": [",", "infer", 1, 1024],
     "w2v2-R-emo-vad": [",", "infer", 1, 1027],
+    "w2v2-base": [",", None, 1, 768],
+    "w2v2-large": [",", None, 1, 1024],
+    "w2v2-lr": [",", None, 1, 1024],
+    "w2v2-lr-300": [",", None, 1, 1024],
+    "w2v2-lr-960": [",", None, 1, 1024],
+    "w2v2-xlrs": [",", None, 1, 1024],
 }
 
 feature_type = args.features
