@@ -8,6 +8,12 @@ from pathlib import Path
 import pandas as pd
 from tqdm import tqdm
 
+W2V2S = ["w2v2-base", 
+         "w2v2-large", 
+         "w2v2-lr", 
+         "w2v2-xlrs", 
+         "w2v2-lr-300",
+         "w2v2-lr-960"]
 
 class Dataloader:
     def create(
@@ -52,11 +58,17 @@ class Dataloader:
                         for index, row in enumerate(reader):
                             if sep_type != ",":
                                 row = row[0].replace(sep_type, ",")
-                        if index != 0:
+                        if feature_type in W2V2S:
                             splits_x[i].append(row[columns_rm:])
                             splits_y[i].append(label_id)
                             if i != 0:
                                 filenames[i - 1].append(filename.split("/")[-1][:-4])
+                        else:
+                            if index != 0:
+                                splits_x[i].append(row[columns_rm:])
+                                splits_y[i].append(label_id)
+                                if i != 0:
+                                    filenames[i - 1].append(filename.split("/")[-1][:-4])
 
             stack_x = [[], [], []]
             stack_y = [[], [], []]
@@ -91,7 +103,7 @@ class Dataloader:
                     f"tmp/{store_name}_{part}_filename.csv"
                 )
         for i, val in tqdm(enumerate(X)):
-            if feature_type == 'w2v2-R-emo-vad' or feature_type == 'w2v2-R-emo':
+            if feature_type in W2V2S or feature_type in ["w2v2-R-emo", "w2v2-R-emo-vad"]:
                 X[i] = X[i].values.astype('object')
             else:
                 X[i] = X[i].rename(columns={"0": "features"})

@@ -1,11 +1,11 @@
 
-from transformers import Wav2Vec2Processor, Wav2Vec2Model
+from transformers import Wav2Vec2Processor, Wav2Vec2Model, Wav2Vec2FeatureExtractor
 import torchaudio
 import torch
 
 # load model
-processor = Wav2Vec2Processor.from_pretrained("facebook/wav2vec2-base-960h")
-model = Wav2Vec2Model.from_pretrained("facebook/wav2vec2-base-960h")
+processor = Wav2Vec2Processor.from_pretrained("facebook/wav2vec2-large-960h")
+model = Wav2Vec2Model.from_pretrained("facebook/wav2vec2-large-960h")
 
 # audio file is decoded on the fly
 array, fs = torchaudio.load("/data/A-VB/audio/wav/00001.wav")
