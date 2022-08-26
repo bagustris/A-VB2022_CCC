@@ -14,8 +14,8 @@ if not os.path.exists(save_dir):
     os.makedirs(save_dir, exist_ok=True)
 
 # load model
-processor = Wav2Vec2Processor.from_pretrained("facebook/wav2vec2-large-960h")
-model = Wav2Vec2Model.from_pretrained("facebook/wav2vec2-large-960h")
+processor = Wav2Vec2Processor.from_pretrained("facebook/wav2vec2-large-robust-ft-libri-960h")
+model = Wav2Vec2Model.from_pretrained("facebook/wav2vec2-large-robust-ft-libri-960h")
 
 # head = [str(i) for i in range(768)]
 
