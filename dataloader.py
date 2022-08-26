@@ -11,7 +11,7 @@ from tqdm import tqdm
 W2V2S = ["w2v2-base", 
          "w2v2-large", 
          "w2v2-lr", 
-         "w2v2-xlrs", 
+         "w2v2-xlsr", 
          "w2v2-lr-300",
          "w2v2-lr-960"]
 
