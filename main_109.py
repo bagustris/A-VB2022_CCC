@@ -75,7 +75,7 @@ feat_dict = {
     "w2v2-lr": [",", None, 0, 1024],
     "w2v2-lr-300": [",", None, 0, 1024],
     "w2v2-lr-960": [",", None, 0, 1024],
-    "w2v2-xlrs": [",", None, 0, 1024],
+    "w2v2-xlsr: [",", None, 0, 1024],
 }
 
 feature_type = args.features
