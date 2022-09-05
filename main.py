@@ -318,11 +318,11 @@ dict_results = {
     "n_seeds": args.n_seeds,
     "task": task,
 }
-# results_csv = pd.DataFrame([dict_results])
-# results_csv.to_csv(
-#     f"results/Validation_{timestamp}_{store_name}_{args.learning_rate}_{args.batch_size}_results.csv",
-#     index=False,
-# )
+results_csv = pd.DataFrame([dict_results])
+results_csv.to_csv(
+    f"results/Validation_{timestamp}_{store_name}_{args.learning_rate}_{args.batch_size}_results.csv",
+    index=False,
+)
 print("Test predictions saved")
 
 if task == "high":
