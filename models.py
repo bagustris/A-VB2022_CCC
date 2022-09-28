@@ -25,7 +25,7 @@ class MLPClass(nn.Module):
             nn.LeakyReLU(),
             nn.Linear(128, 64),
             nn.LayerNorm(64),
-            # nn.LeakyReLU(),
+            nn.LeakyReLU(),
             # nn.Linear(256, 128),
             # nn.BatchNorm1d(128),
             # nn.LeakyReLU(),
