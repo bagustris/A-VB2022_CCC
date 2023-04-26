@@ -46,6 +46,8 @@ Follow the same procedure for each task altering `-t`.
 ## Citation
 
 ```
-[1] B. T. Atmaja and A. Sasou, “EVALUATING VARIANTS OF WAV2VEC 2.0 ON AFFECTIVE VOCAL BURST TASKS,” in ICASSP, IEEE International Conference on Acoustics, Speech and Signal Processing - Proceedings, JUne 2023, vol. 2023-June
+[1] B. T. Atmaja and A. Sasou, “EVALUATING VARIANTS OF WAV2VEC 2.0 ON AFFECTIVE VOCAL BURST TASKS,” 
+in ICASSP, IEEE International Conference on Acoustics, Speech and Signal Processing - Proceedings, 
+June 2023, vol. 2023-June.
 ```
 
