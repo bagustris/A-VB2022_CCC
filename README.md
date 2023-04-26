@@ -1,7 +1,7 @@
 
 # A-VB Feature-based
 Another version of https://github.com/bagustris/A-VB2022 using CCC loss function (please take a look that repository before trying code in this repository).
-Feature extraction for 'w2v2-r-er' and 'w2v2-r-vad' are given there.
+Feature extraction for 'w2v2-r-er' and 'w2v2-r-vad' are given there. Also install requirements from there (inside `feature_based` directory).
 
 We provide a 'feature-based' approach for all four tasks to reproduce results in our ICASSP paper (see citation). 
 
