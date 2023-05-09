@@ -1,3 +1,6 @@
+***The paper for this repo has been published: [Evaluating Variants of wav2vec 2.0 on Affective Vocal Burst Tasks.
+](https://ieeexplore.ieee.org/document/10096552)***
+
 
 # A-VB Feature-based
 Another version of https://github.com/bagustris/A-VB2022 using CCC loss function (please take a look that repository before trying code in this repository).
@@ -45,9 +48,8 @@ Follow the same procedure for each task altering `-t`.
 
 ## Citation
 
-```
-[1] B. T. Atmaja and A. Sasou, “EVALUATING VARIANTS OF WAV2VEC 2.0 ON AFFECTIVE VOCAL BURST TASKS,” 
-in ICASSP, IEEE International Conference on Acoustics, Speech and Signal Processing - Proceedings, 
-June 2023, vol. 2023-June.
-```
+> B. T. Atmaja and A. Sasou, “Evaluating Variants of wav2vec 2.0 on Affective Vocal Burst Tasks,” 
+> in ICASSP 2023 - 2023 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 
+> Jun. 2023, pp. 1–5, doi: 10.1109/ICASSP49357.2023.10096552.
+
 
